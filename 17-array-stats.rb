@@ -1,9 +1,9 @@
-# 使用者不断输入数字存进 Array，最后输出总和、平均、最大值、最小值
+# iterating save each user inputs number into an array, output sum, average, maximum and minimum from this array
 
 arr = []
 
 while (true)
-  print "请输入数字，结束请直接按 Enter: "
+  print "Please keep inputting numbers, break with hitting Enter button anytime: "
   user_input = gets
   if user_input == "\n"
     break
@@ -12,9 +12,10 @@ while (true)
   end
 end
 
-puts arr.to_s
+sum = arr.reduce(&:+)
+avg = sum.to_f / arr.length
 
-puts "总和是 _____"
-puts "平均是 _____"
-puts "最大值是 _____"
-puts "最小值是 _____"
+puts "The sum is #{sum}"
+puts "The average is #{avg}"
+puts "The maximum is #{arr.max}"
+puts "The minimum is #{arr.min}"
