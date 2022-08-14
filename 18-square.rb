@@ -1,10 +1,9 @@
-# 建构一个阵列有一百个的元素，内容是 0, 1, 4, 9, 16, 25...... 每个元素是该索引的平方
+# Generate an array with 1 to n elements, ex. [0, 1, 4, 9, 16, 25...], each element is the square of the index
 
-arr = []
 
-print "请输入数字 N，然后按 Enter: "
-n = gets
+print "Please input a number N, and press Enter: "
+n = gets.to_i
 
-# ...
+arr = (1..n).map { |i| i * i }
 
 puts arr.to_s
