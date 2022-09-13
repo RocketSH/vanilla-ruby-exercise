@@ -1,9 +1,9 @@
-# 给定一阵列内含数字，请输出 0~9 中不见的数字
+# Given an array with numbers, output the missing numbers
 
 def find_missing(arr)
-  # ...
+  arr.sort! 
 end
 
 answer = find_missing( [2,2,1,5,8,4] )
 
-puts answer.to_s # 应该是 [0,3,6,7,9]
+puts answer.to_s # the result should be [0,3,6,7,9]

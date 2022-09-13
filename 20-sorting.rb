@@ -1,6 +1,6 @@
-# 承上题，请排序并去除重复的数字
-# give an array, output another even only array 
-# Hint: 可用 arr.sort 排序，和 arr.uniq 去除重复
+# Following the previous question,
+# Given an array, output an array only contains even numbers 
+# Hint: consider to use arr.sort for sorting and arr.uniq to remove repetetive numbers
 
 arr =  [7, 68, 42, 46, 9, 91, 77, 46, 86, 1]
 
