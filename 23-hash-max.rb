@@ -1,19 +1,20 @@
-# 给定一 Hash，输出有最大 value 的 key
+# Given a hash with numbers, output the key with the maximum value
 
 def find_max(hash)
-  # ...
+  max = hash.values.max
+  hash.key(max)
 end
 
 h = {
-  "a" => 71,
-  "b" => 38,
-  "c" => 21,
-  "d" => 80,
-  "e" => 10
+  "A" => 71,
+  "B" => 38,
+  "C" => 21,
+  "D" => 80,
+  "E" => 10
 }
 
 answer = find_max(h)
 
-puts "有最大 value 的是 #{answer}" # 应该是 d
+puts "The key with the maximum value is #{answer}" # it should be D
 
 
