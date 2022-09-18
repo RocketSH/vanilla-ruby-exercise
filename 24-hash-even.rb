@@ -1,21 +1,23 @@
-# 给定一 Hash，输出 value 是偶数的 keys
+# Given a hash with numbers, output the keys with even value
 
 def find_even_keys(hash)
+  result = hash.select do |k, v|
+    v.even?
+  end
 
-  # ... (请回传一个数组)
-
+  result.keys
 end
 
 h = {
-  "a" => 71,
-  "b" => 38,
-  "c" => 21,
-  "d" => 80,
-  "e" => 10
+  "A" => 71,
+  "B" => 38,
+  "C" => 21,
+  "D" => 80,
+  "E" => 10
 }
 
 answer = find_even_keys(h)
 
-puts "有偶数 value 的 keys 有 #{answer}" # 应该是数组 [b,d,e]
+puts "The keys with even value #{answer}" # It should returns [b,d,e]
 
 

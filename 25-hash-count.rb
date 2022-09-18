@@ -1,4 +1,4 @@
-# 计算一个阵列中各个元素的出现频率
+# Calculate the frequency appearance of each element in an arry
 
 def count(arr)
   h = {}
@@ -7,12 +7,12 @@ def count(arr)
     # ...
   end
 
-  return h # 回传一个 hash
+  return h # return a hash
 end
 
 arr =  ["a", "d", "d", "c", "b", "c", "c", "c", "d", "d", "e", "e", "e", "d", "a", "c", "e", "a", "d", "e"]
 
 answer = count(arr)
 
-puts answer # 答案应该是 {"a"=>3, "d"=>6, "c"=>5, "b"=>1, "e"=>5}
+puts answer # The result should be {"a"=>3, "d"=>6, "c"=>5, "b"=>1, "e"=>5}
 
