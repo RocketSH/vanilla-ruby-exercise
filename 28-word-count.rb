@@ -1,4 +1,4 @@
-# 请打开 wordcount.txt，计算每个单字出现的次数
+# Please open wordcount.txt, and count the frequency of each words
 
 doc = File.read("wordcount.txt")
 

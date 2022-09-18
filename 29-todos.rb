@@ -1,4 +1,4 @@
-# 简易 Todo 代办事项应用
+# A Simple Todo List App
 
 text = File.read("todos.txt")
 
@@ -12,22 +12,22 @@ todos.each_with_index do |todo, index|
 end
 
 while (true)
-  print "请输入指令 1. add 2. remove 3. save，然后按 Enter: "
-  command = gets.chomp
+  print "Please input a command: 1. add 2. remove 3. save, and hit Enter: "
+  command = gets.chomp.to_s
 
-  if command == "add"
-    print "请输入代办事项: "
+  if command == "add" || "1"
+    print "Please input todo item: "
     # ...
-  elsif command == "remove"
-    print "请输入要删除的编号: "
+  elsif command == "remove" || "2"
+    print "Please input which item to delete: "
     # ...
-  elsif command == "save"
-    puts "存盘离开"
+  elsif command == "save" || "3"
+    puts "Save and exit."
 
     # ...
     break;
   else
-    puts "看不懂，请再输入一次"
+    puts "Invaild command, please try again."
   end
 end
 

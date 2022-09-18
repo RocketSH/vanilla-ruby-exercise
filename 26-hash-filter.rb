@@ -1,4 +1,4 @@
-# 给定一个数组包含 Hash，请过滤和排序
+# Given an array contains hashes, please filter and sort upon them
 
 arr = [
   { "name" => "Peter", "age" => 30 },
@@ -8,11 +8,17 @@ arr = [
   { "name" => "Vincent", "age" => 6 },
 ]
 
-# ....
+def find_adult(arr)
+  # filter out non-adult data
+  
+  # sort data
 
-puts "所有成年人，并由小到大: _________"
+  result
+end
 
-# 答案应该是
+puts "List all adults in descending, #{result}"
+
+# The result should be
 #[
 #  { "name" => "Steven", "age" => 22 },
 #  { "name" => "Peter", "age" => 30 },
