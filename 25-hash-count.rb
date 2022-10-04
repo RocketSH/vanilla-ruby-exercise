@@ -4,7 +4,9 @@ def count(arr)
   h = {}
 
   arr.each do |i|
-    # ...
+    arr.uniq.each do |j|
+      h[j] = arr.count(j)
+    end
   end
 
   return h # return a hash
